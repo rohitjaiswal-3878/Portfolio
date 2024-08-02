@@ -1,7 +1,6 @@
 .profile-details {
     background-color: #161513;
     color: white;
-    width: 100vw;
     box-sizing: border-box;
     padding: 40px 0px 20px 0px;
 }
@@ -36,6 +35,7 @@
     line-height: 1;
 }
 
+
 .profile-details-container p {
     font-size: 15px;
     width: 60%;
@@ -53,21 +53,20 @@
 }
 
 .profile-details-container .profile-buttons button {
-    width: 150px;
-    padding: 13px 13px;
+    width: 160px;
+    padding: 13px 0px;
     border-radius: 28px;
+    font-size: 1.1rem;
 }
 
 .profile-details-container .profile-buttons .btn-1 {
     background-color: #ffffff;
     color: black;
-    font-size: 18px;
     font-weight: 600;
 }
 
 .profile-details-container .profile-buttons .btn-2 {
     box-sizing: border-box;
     border: 2px solid white;
-    font-size: 17px;
     font-weight: 550;
 }

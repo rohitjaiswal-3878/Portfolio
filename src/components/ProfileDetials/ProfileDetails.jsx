@@ -14,10 +14,9 @@ function ProfileDetails() {
           make content about it!
         </h1>
         <p>
-          I am a seasoned full-stack software engineer with over <br /> 8 years
-          of professional experience, specializing in backend development.
-          <br /> My expertise lies in crafting robust and scalable SaaS-based
-          <br />
+          I am a seasoned full-stack software engineer with over 8 years of
+          professional experience, specializing in backend development. My
+          expertise lies in crafting robust and scalable SaaS-based
           architectures on the Amazon AWS platform.
         </p>
         <div className="profile-buttons">
