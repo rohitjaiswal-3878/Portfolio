@@ -1,0 +1,73 @@
+.profile-details {
+    background-color: #161513;
+    color: white;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 40px 0px 20px 0px;
+}
+
+.profile-details-container {
+    box-sizing: border-box;
+    width: 58%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.profile-image {
+    margin: 0 auto;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+    background: rgb(174,49,197);
+    background: linear-gradient(317deg, rgba(174,49,197,1) 43%, rgba(245,123,107,1) 72%);
+}
+
+.profile-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.profile-details-container h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    width: 70%;
+    margin: 30px auto 0 auto;
+    line-height: 1;
+}
+
+.profile-details-container p {
+    font-size: 15px;
+    width: 60%;
+    margin: 30px auto;
+    line-height: 1.3;
+    color : #c5c5c5
+}
+
+.profile-details-container .profile-buttons {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 20px;
+}
+
+.profile-details-container .profile-buttons button {
+    width: 150px;
+    padding: 13px 13px;
+    border-radius: 28px;
+}
+
+.profile-details-container .profile-buttons .btn-1 {
+    background-color: #ffffff;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.profile-details-container .profile-buttons .btn-2 {
+    box-sizing: border-box;
+    border: 2px solid white;
+    font-size: 17px;
+    font-weight: 550;
+}
