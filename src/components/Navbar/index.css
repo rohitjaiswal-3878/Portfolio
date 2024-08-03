@@ -7,7 +7,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    position: fixed;
+    min-width: 100vw;
+    top: 0px;
 }
 
 .navbar-container {

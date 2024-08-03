@@ -2,6 +2,7 @@
     background-color: #161513;
     color: white;
     box-sizing: border-box;
+    margin-top: 65px;
     padding: 40px 0px 20px 0px;
 }
 
@@ -57,6 +58,12 @@
     padding: 13px 0px;
     border-radius: 28px;
     font-size: 1.1rem;
+    
+
+}
+.profile-details-container .profile-buttons button:hover{
+    transform: scale(1.02, 1.02);
+    box-shadow: 0px 0px 15px -5px red;
 }
 
 .profile-details-container .profile-buttons .btn-1 {
