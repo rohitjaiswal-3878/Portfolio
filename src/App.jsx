@@ -2,8 +2,9 @@ import { useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import ProfileDetails from "./components/ProfileDetials/ProfileDetails";
-import Experience from "./components/Experience/Experience";
+import Experience from "./components/ExperienceWith/Experience";
 import Projects from "./components/Projects/Projects";
+import Exp from "./components/Experiences/Exp";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <ProfileDetails />
       <Experience />
       <Projects />
+      <Exp />
     </>
   );
 }

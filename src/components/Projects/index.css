@@ -6,16 +6,16 @@
 }
 
 .projects-container {
-    width: 60%;
+    max-width: 60%;
     box-sizing: border-box;
     margin: 0 auto;
     text-align: center;
 
 }
 .projects-container h1 {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 900;
     color: #FFFFFF; 
     background-image: -webkit-linear-gradient(270deg, #FFFFFF -47%, #df582d 55%); 
     background-clip: text;
