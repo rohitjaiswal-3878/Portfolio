@@ -70,6 +70,7 @@
 
 .exp-details-description {
     text-align: justify;
+    text-justify: inter-word;
     color: #8491a0;
     line-height: 1.3;
 }
@@ -77,5 +78,30 @@
 @media only screen and (max-width :  1025px){
     .job-experience-container {
         width: 75%;   
+    }
+}
+
+@media only screen and (max-width : 670px) {
+    .job-experience-container {
+        width: 88%;   
+    }
+
+    .exp-details-heading p {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .exp-details-heading p span {
+        font-size: 0.8rem;
+        text-align: left;
+    }
+
+    .exp-details-period {
+        font-size: 0.7rem;
+    }
+
+    .exp-details-description {
+        font-size: 0.9rem;
     }
 }

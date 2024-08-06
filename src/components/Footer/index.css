@@ -53,8 +53,28 @@
         padding: 80px 40px;
     }
     .footer-container {
-        max-width: 620px;
+        max-width: 750px;
         min-width: 300px;
-       
+    }
+}
+
+
+@media only screen and (max-width : 670px) {
+    .footer {
+        padding: 45px 20px;
+    }
+    .footer-container p {
+        font-size: 0.8rem;
+        margin-bottom: 15px;
+    }
+    .footer-container h1 {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+    .footer-email{
+        margin-bottom: 20px;
+    }
+    .footer-email span {
+        font-size: 0.9rem;
     }
 }
