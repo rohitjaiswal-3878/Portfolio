@@ -2,8 +2,11 @@
     background-color: #161513;
     color: white;
     box-sizing: border-box;
-    margin-top: 65px;
+    margin-top: 60px;
     padding: 40px 0px 20px 0px;
+    min-height: 90svh;
+    display: flex;
+    align-items: center;
 }
 
 .profile-details-container {
@@ -59,7 +62,6 @@
     border-radius: 28px;
     font-size: 1.1rem;
     
-
 }
 .profile-details-container .profile-buttons button:hover{
     transform: scale(1.02, 1.02);
@@ -76,4 +78,23 @@
     box-sizing: border-box;
     border: 2px solid white;
     font-weight: 550;
+}
+
+@media only screen and (max-width : 1025px) {
+    .profile-details-container {
+        width: 70%;
+        
+    }
+    .profile-details-container h1 {
+        width: 90%;
+    }
+    .profile-details-container p {
+        width: 82%;
+    }
+    .profile-details-container .profile-buttons button {
+        width: 140px;
+        padding: 10px 0px;
+        border-radius: 28px;
+        font-size: 0.9rem;
+    }
 }

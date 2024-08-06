@@ -6,11 +6,10 @@
 }
 
 .projects-container {
-    max-width: 60%;
+    max-width: 70%;
     box-sizing: border-box;
     margin: 0 auto;
     text-align: center;
-
 }
 .projects-container h1 {
     font-size: 1.9rem;
@@ -36,7 +35,6 @@
     text-align: left;
     border-radius: 20px;
     background-color: #2a2a2a;
-
 }
 
 .project-details:hover {
@@ -75,4 +73,17 @@
     font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+@media only screen and (max-width : 1025px) {
+    .projects-container {
+        max-width: 85%;
+    }
+    .project {
+        min-width: 100px;
+        max-width: 260px;
+    }
+    .project-details div p {
+        font-size: 0.8rem;
+    }
 }

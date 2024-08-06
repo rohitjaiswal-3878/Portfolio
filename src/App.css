@@ -3,3 +3,29 @@
 * {
     font-family: "Inter", sans-serif;
 }
+
+.app{
+    height: 100vh;
+    overflow-y: scroll;
+    
+}
+
+.app::-webkit-scrollbar {
+    width: 6px;
+}
+
+.app::-webkit-scrollbar-track {
+    background-color: #161513;
+}
+
+.app::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.app::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.app::-webkit-scrollbar-button {
+    display: none;
+}

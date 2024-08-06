@@ -38,3 +38,9 @@
     gap: 9%;
     font-size: 0.8rem;
 }
+
+@media only screen and (max-width : 1025px) {
+    .navbar-container {
+        width: 85%;
+    }
+}

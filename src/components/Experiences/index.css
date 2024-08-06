@@ -73,3 +73,9 @@
     color: #8491a0;
     line-height: 1.3;
 }
+
+@media only screen and (max-width :  1025px){
+    .job-experience-container {
+        width: 75%;   
+    }
+}
