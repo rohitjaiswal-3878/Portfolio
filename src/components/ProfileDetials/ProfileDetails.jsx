@@ -1,8 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./index.css";
 import profileIcon from "../../assets/Avatar.png";
+import { getDetails } from "../../apis/details";
 
 function ProfileDetails() {
+  const [details, setDetails] = useState({
+    profileImage: "",
+    title: "",
+    description: "",
+    resume: "",
+  });
+
+  useEffect(() => {
+    getProfile();
+  }, []);
+
+  const getProfile = async () => {
+    const data = await getDetails();
+    console.log(data);
+  };
+
   return (
     <div className="profile-details">
       <div className="profile-details-container">
