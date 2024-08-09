@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const backendURL = "http://localhost:3001";
+const backendURL = "https://portfolio-backend-6zuq.vercel.app";
 
 const getDetails = async () => {
   try {
