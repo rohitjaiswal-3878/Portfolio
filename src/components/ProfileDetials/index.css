@@ -18,18 +18,22 @@
 
 .profile-image {
     margin: 0 auto;
-    max-width: 200px;
-    max-height: 200px;
+    width: 230px;
+    height: 230px;
     border-radius: 50%;
     background: rgb(174,49,197);
     overflow: hidden;
     background: linear-gradient(317deg, rgba(174,49,197,1) 43%, rgba(245,123,107,1) 72%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .profile-image img {
-    height: 100%;
-    width: 100%;
+    height: 95%;
+    width: 95%;
     object-fit: contain;
+    border-radius: 50%;
 }
 
 .profile-details-container h1 {
@@ -124,5 +128,12 @@
     }
     .profile-details-container .profile-buttons a .btn {
         width: 180px;
+    }
+}
+
+@media only screen and (max-height : 668px) {
+    .profile-image {
+        width: 190px;
+        height: 190px;
     }
 }

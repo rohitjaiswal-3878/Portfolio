@@ -61,7 +61,7 @@
 
 @media only screen and (max-width : 670px) {
     .footer {
-        padding: 45px 20px;
+        padding: 40px 20px;
     }
     .footer-container p {
         font-size: 0.8rem;
@@ -77,4 +77,11 @@
     .footer-email span {
         font-size: 0.9rem;
     }
+}
+
+@media only screen and (max-width : 321px) {
+    .footer {
+        padding: 40px 10px;
+    }
+    
 }

@@ -11,10 +11,10 @@ function Footer() {
       <div className="footer-container">
         <h1>Contact</h1>
         <p>
-          Seasoned Full Stack Software Engineer with over 8 years of hands-on
-          experience in designing and implementing robust, scalable, and
-          innovative web solutions. Adept at leveraging a comprehensive skill
-          set encompassing front-end and back-end technologies{" "}
+          Experienced Full Stack Software Engineer with over a year of hands-on
+          expertise in crafting dynamic, scalable web solutions. Skilled in both
+          front-end and back-end technologies, dedicated to delivering
+          innovative and robust digital experiences.{" "}
         </p>
 
         <div className="footer-email">
