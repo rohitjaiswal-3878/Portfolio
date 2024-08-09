@@ -4,6 +4,7 @@ import { IoMailOutline } from "react-icons/io5";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -21,9 +22,21 @@ function Footer() {
           <IoMailOutline /> <span>rohitjaiswal8898@gmail.com</span>
         </div>
         <div className="footer-social">
-          <FaLinkedin />
-          <FaXTwitter />
-          <FaGithub />
+          <a
+            href="https://www.linkedin.com/in/rohit-jaiswal-02246825a/"
+            target="_blank"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            href="https://wa.me/919555524341?text=Hi%2C%20Rohit%20Jaiswal"
+            target="_blank"
+          >
+            <FaWhatsapp />
+          </a>
+          <a href="https://github.com/rohitjaiswal-3878" target="_blank">
+            <FaGithub />
+          </a>
         </div>
       </div>
     </div>

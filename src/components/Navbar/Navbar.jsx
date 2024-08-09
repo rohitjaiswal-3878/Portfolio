@@ -7,7 +7,24 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 
 function Navbar() {
-  const navbar = ["Home", "Projects", "Experience", "Contact"];
+  const [navbar, setNavbar] = useState([
+    {
+      title: "Home",
+      url: "/",
+    },
+    {
+      title: "Projects",
+      url: "/projects",
+    },
+    {
+      title: "Blogs",
+      url: "/blogs",
+    },
+    {
+      title: "Contact",
+      url: "/contact",
+    },
+  ]);
   const [toggleMenu, setToggleMenu] = useState(false);
 
   const isSmallScreen = useMediaQuery({ query: "(min-width : 670px)" });
@@ -19,13 +36,17 @@ function Navbar() {
     <>
       <div className="navbar">
         <div className="navbar-container">
-          <div className="navbar-icon">
-            <img src={navbarLogo} alt="logo" />
-          </div>
+          <a href="/">
+            <div className="navbar-icon">
+              <img src={navbarLogo} alt="logo" />
+            </div>
+          </a>
           {isSmallScreen ? (
             <ul className="navbar-list">
               {navbar.map((items, index) => (
-                <li key={index}>{items}</li>
+                <a href={items.url} key={index}>
+                  <li>{items.title}</li>
+                </a>
               ))}
             </ul>
           ) : (
@@ -41,7 +62,9 @@ function Navbar() {
       >
         <ul className="navbar-list">
           {navbar.map((items, index) => (
-            <li key={index}>{items}</li>
+            <a href={items.url} key={index}>
+              <li>{items.title}</li>
+            </a>
           ))}
         </ul>
       </div>
