@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import "./index.css";
+import { Link } from "react-router-dom";
 import navbarLogo from "../../assets/logo.png";
 import { useMediaQuery } from "react-responsive";
 import { GiHamburgerMenu } from "react-icons/gi";

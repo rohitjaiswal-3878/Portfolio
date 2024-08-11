@@ -1,24 +1,21 @@
 import { useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
-import ProfileDetails from "./components/ProfileDetials/ProfileDetails";
-import Experience from "./components/ExperienceWith/Experience";
-import Projects from "./components/Projects/Projects";
-import Exp from "./components/Experiences/Exp";
-import Footer from "./components/Footer/Footer";
+import Homepage from "./components/Homepage/Homepage";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
-    <>
-      <Navbar />
+    <BrowserRouter>
       <div className="app">
-        <ProfileDetails />
-        <Experience />
-        <Projects />
-        <Exp />
-        <Footer />
+        <Navbar />
+        <Routes>
+          <Route element={<Homepage />} path="/" />
+          <Route element={<Contact />} path="/contact" />
+        </Routes>
       </div>
-    </>
+    </BrowserRouter>
   );
 }
 
