@@ -45,9 +45,9 @@ function Navbar() {
           {isSmallScreen ? (
             <ul className="navbar-list">
               {navbar.map((items, index) => (
-                <a href={items.url} key={index}>
+                <Link to={items.url} key={index}>
                   <li>{items.title}</li>
-                </a>
+                </Link>
               ))}
             </ul>
           ) : (
