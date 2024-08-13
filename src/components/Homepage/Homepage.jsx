@@ -3,7 +3,6 @@ import ProfileDetails from "../ProfileDetials/ProfileDetails";
 import Projects from "../Projects/Projects";
 import Experience from "../ExperienceWith/Experience";
 import Exp from "../Experiences/Exp";
-import Footer from "../Footer/Footer";
 
 function Homepage() {
   return (
@@ -12,7 +11,6 @@ function Homepage() {
       <Experience />
       <Projects />
       <Exp />
-      <Footer />
     </div>
   );
 }
