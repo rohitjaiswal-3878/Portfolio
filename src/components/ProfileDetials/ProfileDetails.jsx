@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./index.css";
-import profileIcon from "../../assets/Avatar.png";
 import { getDetails } from "../../apis/details";
+import { Link } from "react-router-dom";
 
 function ProfileDetails() {
   const [details, setDetails] = useState({
@@ -44,9 +44,9 @@ function ProfileDetails() {
           <h1>{details.title}</h1>
           <p>{details.description}</p>
           <div className="profile-buttons">
-            <a href="">
+            <Link to="/contact">
               <div className="btn-1 btn">Get in touch</div>
-            </a>
+            </Link>
             <a href={details.resume} download="Resume.pdf">
               <div className="btn-2 btn">Download CV</div>
             </a>
