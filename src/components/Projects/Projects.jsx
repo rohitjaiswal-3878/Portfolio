@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./index.css";
 import quizzie from "../../assets/Projects/t1.png";
 import notesTaking from "../../assets/Projects/t2.png";
@@ -7,6 +7,7 @@ import findJob from "../../assets/Projects/t3.png";
 import { MdArrowOutward } from "react-icons/md";
 
 function Projects() {
+  const [isNarrow, setIsNarrow] = useState(false);
   const [projects, setProjects] = useState([
     {
       thumbnail: quizzie,
@@ -34,6 +35,21 @@ function Projects() {
     },
   ]);
 
+  useEffect(() => {
+    const mediaWatcher = window.matchMedia("(max-width: 769px)");
+    setIsNarrow(mediaWatcher);
+
+    mediaWatcher.addEventListener("change", (e) => {
+      setIsNarrow(e.matches);
+    });
+
+    return function cleanup() {
+      mediaWatcher.removeEventListener("change", (e) => {
+        setIsNarrow(e.matches);
+      });
+    };
+  }, []);
+
   return (
     <div className="projects">
       <div className="projects-container">
@@ -45,7 +61,8 @@ function Projects() {
               <div
                 className="project-img-details"
                 style={{
-                  flexDirection: index % 2 == 0 ? "" : "row-reverse",
+                  flexDirection:
+                    index % 2 == 0 || isNarrow ? "" : "row-reverse",
                 }}
               >
                 <img
@@ -53,7 +70,8 @@ function Projects() {
                   alt="thumbail"
                   style={{
                     borderTopRightRadius: index % 2 != 0 ? "15px" : "",
-                    borderTopLeftRadius: index % 2 == 0 ? "15px" : "0px",
+                    borderTopLeftRadius:
+                      index % 2 == 0 || isNarrow ? "15px" : "0px",
                   }}
                 />
                 <div className="project-description">
