@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import "./index.css";
 import quizzie from "../../assets/Projects/t1.png";
 import notesTaking from "../../assets/Projects/t2.png";
+import proManage from "../../assets/Projects/pro-manage.png";
+import webStory from "../../assets/Projects/web-story.png";
+
 import findJob from "../../assets/Projects/t3.png";
 
 import { MdArrowOutward } from "react-icons/md";
@@ -10,12 +13,28 @@ function Projects() {
   const [isNarrow, setIsNarrow] = useState(false);
   const [projects, setProjects] = useState([
     {
+      thumbnail: proManage,
+      url: "https://pro-manage-tasks.vercel.app/",
+      description:
+        "Built a MERN stack task management app, improving productivity by 30% with features like task prioritization, assignment, and analytics using MongoDB aggregation.",
+      skills: ["React", "MongoDB", "Express", "Node.js", "jwt", "mongoose"],
+      title: "Pro Manage",
+    },
+    {
       thumbnail: quizzie,
       url: "https://quiz-app-rohit-jaiswal.vercel.app/",
       description:
         "Developed a full-stack web application that allows users to create, share, and take interactive quizzes, supporting both Q&A and poll formats.",
-      skills: ["React", "Mongo", "Express"],
+      skills: ["React", "Mongo", "Express", "jwt", "mongoose"],
       title: "Quizzie",
+    },
+    {
+      thumbnail: webStory,
+      url: "https://stories-orpin.vercel.app/",
+      description:
+        "Developed a multimedia story platform using MERN stack, driving 90% user engagement with features like story creation, editing, sharing, and bookmarking. Leveraged MongoDB aggregation pipelines for performance optimization and data insights.",
+      skills: ["React", "MongoDB", "Express", "Node.js", "jwt", "mongoose"],
+      title: "Web Story",
     },
     {
       thumbnail: notesTaking,
